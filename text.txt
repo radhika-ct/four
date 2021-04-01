@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks:
+  - name: create a multipule files
+  copy:
+    path: "/home/ansible/{{item}}"
+    state: touch
+    mode: 0775
+   with-item:
+    - configer.file
+    - loging .txt
