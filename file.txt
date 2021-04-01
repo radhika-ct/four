@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+  - name: create file with content
+  copy:
+    dest: "/home/ansible/sample.txx"
+    state: touch
+    content:
+    - radhika gali
